@@ -1,0 +1,130 @@
+:root {
+    --primary: #BDDFBC;
+    --secondary: #023A22;
+    --accent: #F2F2F2;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--primary);
+    color: var(--secondary);
+    min-height: 100vh;
+}
+
+/* ================= Navigation ================= */
+nav {
+    background-color: var(--secondary);
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: chartreuse;
+    text-decoration: underline;
+}
+nav button {
+    margin-left: 15rem;
+    border: 3px solid var(--secondary);
+    background-color: var(--primary);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+nav button a{
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.secondbtns {
+    display: flex;             /* puts buttons side by side */
+    gap: 20px;                 /* space between buttons */
+    justify-content: center;   /* center horizontally */
+    margin-top: 20px;
+}
+
+.second-btn {
+    display: inline-block;     
+    padding: 10px 25px;        
+    font-size: 16px;           
+    font-weight: bold;
+    border: 2px solid var(--secondary); /* secondary color */
+    border-radius: 8px;
+    background-color:var(--primary); /* primary color */
+    color: var(--secondary);
+    text-decoration: none;     /* remove underline */
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.second-btn:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+    border-color: var(--primary);
+    transform: translateY(-2px); /* subtle lift effect */
+}
+
+/* ================= Tables ================= */
+
+
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+table caption{
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid var(--secondary);
+    text-align: left;
+}
+
+table th {
+    background-color: var(--secondary);
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* ================= Links in Tables ================= */
+table a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table a:hover {
+    color: #012a17;
+    text-decoration: underline;
+}
